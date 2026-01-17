@@ -30,8 +30,8 @@ smart-habit-tracker
 ┃ ┣ App.jsx
 ┃ ┣ main.jsx
 ┃ ┗ index.css
-┣ public
-┃ ┗ index.html
+┗ index.html
+┗ vite.config.js
 ┗ package.json
 ```
 
