@@ -1,0 +1,143 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  background: #fdfefe; /* very soft pastel white */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Main card */
+.container {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Title */
+.container h1 {
+  text-align: center;
+  font-size: 22px;
+  color: #1f2937;
+  margin-bottom: 6px;
+}
+
+.container p {
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 14px;
+}
+
+/* Progress bar */
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #a5b4fc, #93c5fd);
+  transition: width 0.3s ease;
+}
+
+/* Input */
+input {
+  width: 100%;
+  padding: 11px 14px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #c7d2fe;
+}
+
+/* Main button */
+button {
+  width: 100%;
+  padding: 11px;
+  border-radius: 12px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  background: #a5b4fc;
+  color: #1e293b;
+  margin-bottom: 18px;
+}
+
+button:hover {
+  background: #93c5fd;
+}
+
+/* Habit card */
+.habit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9fafb;
+  padding: 12px 14px;
+  border-radius: 14px;
+  margin-bottom: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+/* Habit text */
+.habit span {
+  font-size: 14px;
+  color: #374151;
+}
+
+/* Completed habit */
+.habit.done {
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.habit.done span {
+  text-decoration: line-through;
+  color: #166534;
+}
+
+/* Done / Undo button */
+.habit button {
+  width: auto;
+  padding: 6px 12px;
+  font-size: 12px;
+  background: #bbf7d0;
+  color: #065f46;
+  margin: 0;
+}
+
+.habit.done button {
+  background: #fecaca;
+  color: #7f1d1d;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .container {
+    padding: 18px;
+  }
+
+  .container h1 {
+    font-size: 20px;
+  }
+}
